@@ -24,7 +24,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"></RowDefinition>
             <RowDefinition>
 
             </RowDefinition>
@@ -37,7 +37,7 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-
+        <Button Name="RestartGameButton" Grid.Row="0" Grid.Column="3" Content="Restart Game" Click="RestartGame" Width="100" Height="20" HorizontalAlignment="Right"/>
 
         <Button x:Name="Button1A" Grid.Row="1" Grid.Column="1" Background="White" Click="Button1A_Clicked" Content="1A"/>
         <Button x:Name="Button1B" Grid.Row="1" Grid.Column="2" Background="White" Click="Button1B_Clicked" Content="1B"/>

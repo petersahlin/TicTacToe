@@ -241,7 +241,19 @@ namespace TicTacToe
             return availableCellsList;
         }
 
-        //method for resetting the game
+        private void RestartGame(object sender, RoutedEventArgs e)
+        {
+            AvailableCells = InitializeAvailableCellsList();
+            Button1A.Content = "";
+            Button1B.Content = "";
+            Button1C.Content = "";
+            Button2A.Content = "";
+            Button2B.Content = "";
+            Button2C.Content = "";
+            Button3A.Content = "";
+            Button3B.Content = "";
+            Button3C.Content = "";
+        }
 
         private Image CreateCrossImage()
         {
@@ -264,7 +276,6 @@ namespace TicTacToe
 
             return circleImage;
         }
-
 
     }
 }
