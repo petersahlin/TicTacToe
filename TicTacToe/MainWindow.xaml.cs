@@ -26,7 +26,7 @@ namespace TicTacToe
             {
 
                 Button1A.Content = CreateCrossImage();
-                var checkWin = CheckForWin("1AX");                                  //send button here?
+                var checkWin = CheckForWin("1AX");            
                 if (!checkWin)
                 {
                     await OpponentsMove("Button1A");
